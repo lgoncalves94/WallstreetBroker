@@ -22,7 +22,7 @@ class WallstreetBroker:
     def process_data(self,data):
         if data.index.tzinfo is None:
             data.index = data.index.tz_localize('UTC')
-        data.index = data.index.tz_convert('US/Eastern')
+        data.index = data.index.tz_convert('Europe/Berlin')
         data.reset_index(inplace=True)
         data.rename(columns={'Date': 'Datetime'}, inplace= True)
         return data

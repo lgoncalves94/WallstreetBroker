@@ -12,7 +12,7 @@ import ta
 broker = WallstreetBroker()
 
 # Sidebar for INPUT
-st.sidebar.header('Chart Parameters')
+st.sidebar.header('Niki\'s Portfolio')
 ticker = st.sidebar.selectbox('Ticker Symbol', ['NFLX', 'GOOGL', 'AMZN', 'MSFT','TSLA'])  # Changed 'Time Period' to 'Ticker Symbol'
 time_period = st.sidebar.selectbox('Time Period', ['1d', '1w', '1mo', '1y', 'max'])
 chart_type = st.sidebar.selectbox('Chart Type', ['Candlestick', 'Line'])
